@@ -865,8 +865,12 @@ table.shell-table tbody tr:hover { background: color-mix(in srgb, var(--accent) 
       <!-- TELA DE RESULTADO (O MOMENTO UAU) -->
       <section id="stepResult" class="step-view" aria-labelledby="resultHeading">
         
-        <!-- Header do Resultado -->
-        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 1.5rem; margin-bottom: 1.8rem;">
+        <!-- Header do Resultado (centralizado) -->
+        <div style="text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 1.5rem; margin-bottom: 1.8rem;">
+          <div style="display: inline-flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem;">
+            <img src="/logo-enginecore.png" alt="EngineCore" style="height: 26px; width: auto; display: inline-block;">
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #FFFFFF; font-size: 1.1rem;">EngineCore</span>
+          </div>
           <div>
             <div class="result-badge badge-cyan" style="margin-bottom: 0.6rem;">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -880,9 +884,9 @@ table.shell-table tbody tr:hover { background: color-mix(in srgb, var(--accent) 
             </p>
           </div>
 
-          <div style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); padding: 0.75rem 1.1rem; border-radius: 12px; text-align: right;">
-            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600; letter-spacing: 0.05em; margin-bottom: 0.3rem;">Nível de Prontidão</div>
-            <div style="display: flex; align-items: center; justify-content: flex-end; gap: 0.6rem;">
+          <div style="display: inline-flex; flex-direction: column; align-items: center; gap: 0.3rem; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); padding: 0.75rem 1.4rem; border-radius: 12px; margin-top: 1.2rem;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600; letter-spacing: 0.05em;">Nível de Prontidão</div>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 0.6rem;">
               <span id="resReadinessBadge" class="result-badge badge-cyan" style="font-size: 0.75rem;">Alta</span>
               <div class="readiness-meter" id="resReadinessPips">
                 <div class="readiness-pip filled high"></div>
@@ -998,7 +1002,7 @@ table.shell-table tbody tr:hover { background: color-mix(in srgb, var(--accent) 
       <div style="font-size: 0.82rem; color: #9CA3AF; margin-bottom: 0.75rem;">
         <a href="https://instagram.com/enginecoreapp" target="_blank" rel="noopener noreferrer" style="color: #9CA3AF; text-decoration: none; font-weight: 500;">@enginecoreapp</a>
         <span style="margin: 0 0.5rem;">·</span>
-        <span>mastercore.app/enginecore/qualificacao</span>
+        <span>enginecore.app/qualificacao</span>
       </div>
       <p style="font-size: 0.75rem; color: #6B7280; max-width: 500px; margin: 0 auto; line-height: 1.45;">
         Resultados dependem do contexto de cada cliente; toda entrega acompanha relatório auditável.
