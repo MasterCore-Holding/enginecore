@@ -1411,6 +1411,12 @@ _Olá time EngineCore! Concluí o diagnóstico interativo e gostaria de conversa
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify(payload)
         }).catch(function(){});
+        // MC-EC-WORKSPACE-001 F4 - espelho EngineCore (grava nos 2 por 24h; corte definitivo apos estavel)
+        fetch('https://engine-core-c8b3a3a2.base44.app/api/functions/registrarLeadAppsScript', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(payload)
+        }).catch(function(){});
       } catch(e) {}
     }
 
