@@ -1,0 +1,33 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.pnpm-store/
+
+# Env / segredos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Build
+dist/
+build/
+.next/
+out/
+.cache/
+*.tsbuildinfo
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Temporários
+tmp/
+*.tmp
