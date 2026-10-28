@@ -715,6 +715,54 @@
       font-size: 1.05rem;
     }
 
+    /* CTA em duas jornadas — hierarquia restaurada (achado 7 / PD-2710-06) */
+    .cta-journey-client {
+      border-color: rgba(0, 229, 160, 0.48);
+      background: radial-gradient(circle at 50% 0%, rgba(0, 229, 160, 0.16) 0%, transparent 72%),
+                  linear-gradient(180deg, #17171f 0%, #0b0b10 100%);
+      box-shadow: 0 0 0 1px rgba(0, 229, 160, 0.10), 0 20px 55px rgba(0, 0, 0, 0.5);
+      padding: 4.25rem 2rem;
+    }
+    .cta-journey-client .cta-banner-title {
+      font-size: clamp(2.25rem, 4.8vw, 3.5rem);
+      letter-spacing: -0.02em;
+    }
+    .cta-journey-client .cta-banner-desc { font-size: 1.12rem; }
+
+    .cta-journey-inst {
+      text-align: left;
+      padding: 2rem 2.1rem;
+      margin: 0 auto 4rem;
+      background: linear-gradient(180deg, #101017 0%, #0c0c11 100%);
+      border: 1px solid var(--border);
+      box-shadow: none;
+    }
+    .cta-journey-inst .cta-banner-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.6rem;
+    }
+    /* mesmo eixo do título: sem max-width centrado nem margem automática */
+    .cta-journey-inst .cta-banner-desc {
+      margin: 0 0 1.15rem;
+      max-width: 760px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .cta-link-secondary {
+      display: inline-block;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding-bottom: 2px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+      transition: color 0.18s ease, border-color 0.18s ease;
+    }
+    .cta-link-secondary:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
     /* Footer */
     .site-footer {
       border-top: 1px solid var(--border);
@@ -1046,7 +1094,6 @@
     <!-- SECTION 4: PAINEL DE MÉTRICAS (Efeito UAU / Relatório Auditável) -->
     <section id="dashboard" class="shell-section shell-container">
       <div class="section-head">
-        <span class="section-eyebrow">Transparência Radical</span>
         <h2 class="section-title">Painel de Métricas e Performance em Tempo Real</h2>
         <p class="section-desc">Prova visual de que cada centavo investido é monitorado com precisão analítica.</p>
       </div>
@@ -1327,33 +1374,23 @@
       </div>
     </section>
 
-    <!-- SECTION 7: CTA FINAL -->
+    <!-- SECTION 7: CTA FINAL — JORNADA CLIENTE (reestruturado 28/10) -->
     <section class="shell-container">
-      <div class="cta-banner">
+      <div class="cta-banner cta-journey-client">
         <h2 class="cta-banner-title">Vamos falar de crescimento?</h2>
         <p class="cta-banner-desc">
           Agende uma avaliação de discovery. Se fechar, o valor é creditado no projeto — risco zero para começar.
         </p>
-        
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.85rem;">
-          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-            <a href="https://enginecore.app/qualificacao?utm_source=site&utm_medium=landing&utm_campaign=projeto_pontual" 
-               class="btn-core btn-core-primary" 
-               style="font-size: 1.05rem; padding: 0.9rem 2.2rem;"
-               target="_blank" 
-               rel="noopener noreferrer">
-              <span>Agende um discovery</span>
-              <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-            </a>
 
-            <a href="https://enginecore.app/qualificacao?utm_source=site&utm_medium=landing&utm_campaign=parceria" 
-               class="btn-core btn-core-secondary" 
-               style="font-size: 1.05rem; padding: 0.9rem 1.8rem;"
-               target="_blank" 
-               rel="noopener noreferrer">
-              <span>Fale sobre Parceria B2B</span>
-            </a>
-          </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.9rem;">
+          <a href="https://enginecore.app/qualificacao?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=projeto_pontual"
+             class="btn-core btn-core-primary"
+             style="font-size: 1.15rem; padding: 1.05rem 2.8rem;"
+             target="_blank"
+             rel="noopener noreferrer">
+            <span>Agende um discovery</span>
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+          </a>
 
           <p class="cta-microcopy">
             Jornada de qualificação de ~3 minutos: você responde perguntas rápidas e sai com um diagnóstico de crescimento e a proposta certa na mão.
@@ -1363,12 +1400,12 @@
     </section>
 
     <!-- RODAPÉ -->
-    <!-- Bloco Ecossistema (MC-LANDING-ALIGN-01 item 3.2) -->
+    <!-- Bloco Ecossistema — JORNADA INSTITUCIONAL (reestruturado 28/10) -->
     <section class="shell-container" id="ecossistema" style="padding-bottom: 3rem;">
-      <div class="cta-banner" style="text-align: left;">
-        <h2 class="cta-banner-title" style="font-size: 1.3rem;">O Ecossistema MasterCore</h2>
-        <p class="cta-banner-desc" style="margin-bottom: 1.25rem;">A EngineCore é o braço de growth digital do Grupo MasterCore, operando com o mesmo padrão de governança que nasce cada venture do grupo: telemetria auditável e supervisão humana mandatória.</p>
-        <a href="https://mastercore.app/?utm_source=enginecore&amp;utm_medium=landing&amp;utm_campaign=ecossistema" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-block; background: var(--accent); color: var(--accent-contrast); font-weight: 700; padding: 0.8rem 1.6rem; border-radius: 10px; text-decoration: none;">Conheça a holding →</a>
+      <div class="cta-banner cta-journey-inst">
+        <h2 class="cta-banner-title">O Ecossistema MasterCore</h2>
+        <p class="cta-banner-desc">A EngineCore &eacute; o bra&ccedil;o de growth digital do <a href="https://mastercore.app/?utm_source=enginecore&amp;utm_medium=landing&amp;utm_campaign=ecossistema" target="_blank" rel="noopener noreferrer" style="color: var(--text); text-decoration: underline; text-decoration-color: rgba(255,255,255,0.28); text-underline-offset: 3px;">Grupo MasterCore</a>, operando com o mesmo padr&atilde;o de governan&ccedil;a que nasce cada venture do grupo: telemetria audit&aacute;vel e supervis&atilde;o humana mandat&oacute;ria.</p>
+        <a href="https://enginecore.app/qualificacao?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=parceria" target="_blank" rel="noopener noreferrer" class="cta-link-secondary">Fale sobre Parceria B2B</a>
       </div>
     </section>
 
