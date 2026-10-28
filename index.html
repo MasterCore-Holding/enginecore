@@ -1071,9 +1071,9 @@
               <span>CAC Médio</span>
               <span style="color: var(--accent); font-size: 0.75rem;">Meta: &le; R$ 45</span>
             </div>
-            <div class="metric-box-num">R$ 38,40</div>
+            <div class="metric-box-num">R$ 00,00*</div>
             <div class="metric-delta delta-green">
-              <span>↓ 18.2%</span> vs. mês anterior
+              <span>—</span> sem série histórica
             </div>
           </div>
 
@@ -1082,9 +1082,9 @@
               <span>ROAS Geral</span>
               <span style="color: var(--accent); font-size: 0.75rem;">Meta: 3.5x</span>
             </div>
-            <div class="metric-box-num">5.2x</div>
+            <div class="metric-box-num">0.0x*</div>
             <div class="metric-delta delta-green">
-              <span>↑ +1.7x</span> acima da meta
+              <span>—</span> sem série histórica
             </div>
           </div>
 
@@ -1093,9 +1093,9 @@
               <span>Leads Qualificados</span>
               <span style="color: #79a6ff; font-size: 0.75rem;">CRM Integrado</span>
             </div>
-            <div class="metric-box-num">1.482</div>
+            <div class="metric-box-num">000*</div>
             <div class="metric-delta delta-green">
-              <span>↑ +34%</span> no período
+              <span>—</span> sem série histórica
             </div>
           </div>
 
@@ -1104,11 +1104,18 @@
               <span>Taxa de Conversão LP</span>
               <span style="color: var(--accent); font-size: 0.75rem;">CRO Engine</span>
             </div>
-            <div class="metric-box-num">14.8%</div>
+            <div class="metric-box-num">0.0%*</div>
             <div class="metric-delta delta-green">
-              <span>↑ +4.2 p.p.</span> pós teste A/B
+              <span>—</span> sem teste A/B registrado
             </div>
           </div>
+        </div>
+
+        <!-- Nota de dados ilustrativos (PD-2710-06) -->
+        <div class="kpi-note-illustrative" style="margin: 0 0 1.5rem; padding: 0.9rem 1.1rem; border-left: 3px solid var(--accent); background: rgba(0,229,160,0.06); border-radius: 8px;">
+          <p style="margin: 0; font-size: 0.86rem; line-height: 1.55; color: var(--text-muted);">
+            <strong style="color: var(--text);">* Dados ilustrativos de demonstração.</strong> A EngineCore não possui cliente com receita reconhecida; estes indicadores representam o formato do relatório auditável, não resultados obtidos.
+          </p>
         </div>
 
         <!-- Live Chart Box with Switcher -->
@@ -1430,13 +1437,13 @@
       const chartDatasets = {
         roas: {
           labels: ["Sem 01", "Sem 02", "Sem 03", "Sem 04", "Sem 05", "Sem 06"],
-          values: [2.1, 2.8, 3.4, 4.1, 4.9, 5.2],
+          values: [0, 0, 0, 0, 0, 0],
           color: "#00E5A0",
           format: (v) => v.toFixed(1) + "x"
         },
         leads: {
           labels: ["Sem 01", "Sem 02", "Sem 03", "Sem 04", "Sem 05", "Sem 06"],
-          values: [120, 165, 230, 290, 320, 357],
+          values: [0, 0, 0, 0, 0, 0],
           color: "#1B5FFF",
           format: "num"
         }
